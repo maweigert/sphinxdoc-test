@@ -8,23 +8,15 @@
 Documentation for the Code
 **************************
 
-.. automodule:: abc_pack
 
 
-some members
-=========================
+Introduction
+============
 
 This is something I want to say that is not in the docstring.
 
-.. automodule:: abc_pack.myclass
-   :members:
-.. automodule:: abc_pack.myclass   
-   :members: _secret_service
-
 
 	  
-			 
-
 .. toctree::
    :hidden:
    :numbered:
@@ -35,12 +27,15 @@ This is something I want to say that is not in the docstring.
    api
    bpm
    docstring_examples
+			 
 
 
-Indices and tables
-==================
+..
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   Indices and tables
+   ==================
+
+   * :ref:`genindex`
+   * :ref:`modindex`
+   * :ref:`search`
 

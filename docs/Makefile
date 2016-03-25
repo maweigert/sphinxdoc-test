@@ -1,6 +1,9 @@
 # Makefile for Sphinx documentation
 #
 
+GH_PAGES_SOURCES = docs/source soccermetrics docs/Makefile
+
+
 # You can set these variables from the command line.
 SPHINXOPTS    =
 SPHINXBUILD   = sphinx-build
