@@ -1,0 +1,15 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Installing}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Basic Usage}{1}{section.1.2}
+\contentsline {paragraph}{Notes}{2}{paragraph*.4}
+\contentsline {paragraph}{Examples}{2}{paragraph*.5}
+\contentsline {section}{\numberline {1.3}Documentation}{3}{section.1.3}
+\contentsline {subsection}{\numberline {1.3.1}myclass}{3}{subsection.1.3.1}
+\contentsline {section}{\numberline {1.4}Beam propagation}{4}{section.1.4}
+\contentsline {paragraph}{References}{4}{paragraph*.14}
+\contentsline {section}{\numberline {1.5}Docstring examples}{5}{section.1.5}
+\contentsline {paragraph}{References}{5}{paragraph*.18}
+\contentsline {paragraph}{Examples}{5}{paragraph*.21}
+\contentsline {chapter}{Python Module Index}{7}{section*.25}
+\contentsline {chapter}{Index}{9}{section*.26}

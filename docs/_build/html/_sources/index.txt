@@ -1,0 +1,46 @@
+.. ABC_PACK documentation master file, created by
+   sphinx-quickstart on Thu Mar 24 17:03:47 2016.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+
+
+Documentation for the Code
+**************************
+
+.. automodule:: abc_pack
+
+
+some members
+=========================
+
+This is something I want to say that is not in the docstring.
+
+.. automodule:: abc_pack.myclass
+   :members:
+.. automodule:: abc_pack.myclass   
+   :members: _secret_service
+
+
+	  
+			 
+
+.. toctree::
+   :hidden:
+   :numbered:
+   :maxdepth: 2
+
+   installing
+   usage
+   api
+   bpm
+   docstring_examples
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
