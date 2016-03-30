@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Documentation for the Code &mdash; bpm 1.0 documentation</title>
+    <title>3. Examples &mdash; bpm 1.0 documentation</title>
     
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -23,8 +23,9 @@
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="bpm 1.0 documentation" href="#" />
-    <link rel="next" title="1. Installing" href="installing.html" />
+    <link rel="top" title="bpm 1.0 documentation" href="index.html" />
+    <link rel="next" title="4. API Documentation" href="api.html" />
+    <link rel="prev" title="2. Basic Usage" href="usage.html" />
    
   
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
@@ -37,19 +38,39 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  <div class="section" id="documentation-for-the-code">
-<h1>Documentation for the Code<a class="headerlink" href="#documentation-for-the-code" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>This is something I want to say that is not in the docstring.</p>
-<div class="toctree-wrapper compound">
-</div>
+  <div class="section" id="examples">
+<h1>3. Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="free-propagation-of-focused-beam">
+<h2>3.1. Free propagation of focused beam<a class="headerlink" href="#free-propagation-of-focused-beam" title="Permalink to this headline">¶</a></h2>
 <blockquote>
-<div><ul class="simple">
-<li><a class="reference internal" href="genindex.html"><span>Index</span></a></li>
-<li><a class="reference internal" href="py-modindex.html"><span>Module Index</span></a></li>
-<li><a class="reference internal" href="search.html"><span>Search Page</span></a></li>
-</ul>
+<div><p>import bpm</p>
+<dl class="docutils">
+<dt>m = bpm.Bpm3d(size = (1024,1024,800),</dt>
+<dd><p class="first">units = (.1,.1,.1),
+lam = .5,</p>
+<blockquote class="last">
+<div>boundary = &#8220;absorption&#8221;)</div></blockquote>
+</dd>
+</dl>
+<p>field = m.propagate(u0 = m.initial.focus(zfoc = 10.))</p>
+</div></blockquote>
+</div>
+<div class="section" id="plane-wave-on-sphere-with-scattering">
+<h2>3.2. Plane wave on sphere (with scattering)<a class="headerlink" href="#plane-wave-on-sphere-with-scattering" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><p>import bpm</p>
+<p>dn = fill_array_with_sphere_dn()</p>
+<dl class="docutils">
+<dt>m = bpm.Bpm3d(size = (1024,1024,800),</dt>
+<dd><p class="first">units = (.1,.1,.1),
+lam = .5,</p>
+<blockquote class="last">
+<div>dn = dn,
+boundary = &#8220;absorption&#8221;)</div></blockquote>
+</dd>
+</dl>
+<p>field, cross_section = m.propagate(u0 = m.initial.plane_wave(),
+return_scattering = True)</p>
 </div></blockquote>
 </div>
 </div>
@@ -61,7 +82,7 @@
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
 <p class="logo">
-  <a href="#">
+  <a href="index.html">
     <img class="logo" src="_static/logo.png" alt="Logo"/>
     
     <h1 class="logo logo-name">bpm</h1>
@@ -82,10 +103,10 @@
 
 
 <h3>Navigation</h3>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="installing.html">1. Installing</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usage.html">2. Basic Usage</a></li>
-<li class="toctree-l1"><a class="reference internal" href="examples.html">3. Examples</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">3. Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">4. API Documentation</a></li>
 </ul>
 
@@ -120,7 +141,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.7</a>
       
       |
-      <a href="_sources/index.txt"
+      <a href="_sources/examples.txt"
           rel="nofollow">Page source</a>
     </div>
 

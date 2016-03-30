@@ -20,14 +20,13 @@ This is something I want to say that is not in the docstring.
 .. toctree::
    :hidden:
    :numbered:
-   :maxdepth: 2
+   :maxdepth: 1
 
    installing
    usage
+   examples
    api
-   bpm
-   docstring_examples
-			 
+   	 
 
 
 ..

@@ -1,20 +1,12 @@
-Documentation
+API Documentation 
 =================
 
-.. py:function:: enumerate(sequence[, start=0])
 
-   Return an iterator that yields tuples of an index and an item of the
-   *sequence*. (And so on.)
+.. autofunction:: bpm.psf
 
+.. autofunction:: bpm.psf_u0
 
+.. autofunction:: bpm.bpm_3d
 
-
-myclass
-------
-
-.. automodule:: abc_pack.myclass
-	:members:
-
-
-
+  
 	 
